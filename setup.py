@@ -1,0 +1,41 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='fastapi',
+    version='0.95.2',
+    author='Sebastián Ramírez',
+    authro_email='tiangolo@gmail.com',
+    packages=find_packages(),
+    classifiers=[
+        "Development Status :: 4 - Beta",
+        "Intended Audience :: Developers",
+        "Intended Audience :: Information Technology",
+        "Intended Audience :: System Administrators",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+        "Programming Language :: Python :: 3 :: Only",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
+        "Programming Language :: Python :: 3.11",        
+        "Topic :: Internet",        
+        "Topic :: Software Development",
+        "Topic :: Software Development :: Libraries",
+        "Topic :: Software Development :: Libraries :: Application Frameworks",
+        "Topic :: Software Development :: Libraries :: Python Modules",
+        "Framework :: AsyncIO",        
+        "Framework :: FastAPI",
+        "Framework :: Pydantic",
+        "Framework :: Pydantic :: 1",        
+        "Environment :: Web Environment",
+        "Typing :: Typed",
+        "Topic :: Internet :: WWW/HTTP",
+        "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+    ],
+    python_requires='>=3.7',
+    install_requires=[
+        "starlette>=0.27.0,<0.28.0",
+        "pydantic >=1.6.2,!=1.7,!=1.7.1,!=1.7.2,!=1.7.3,!=1.8,!=1.8.1,<2.0.0",
+    ]
+)
